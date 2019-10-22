@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const links = [
   { href: '/', label: 'Home' },
-  { href: 'https://juejin.im/user/5b8604b551882542c9640012', label: 'juejin' },
+  { href: '/user', label: 'userPage' },
   { href: 'https://github.com/GzwNICE', label: 'GitHub' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
@@ -15,7 +15,7 @@ const Nav = () => (
     <ul>
       {links.map(({ key, href, label }) => (
         <li key={key}>
-          <a href={href} target='_blank'>{label}</a>
+          <a href={href} >{label}</a>
         </li>
       ))}
     </ul>

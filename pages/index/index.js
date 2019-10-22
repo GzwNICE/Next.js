@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 // import { Button } from 'antd'
-import Nav from '../components/nav'
+import Nav from '../../components/nav'
 
 
 const Home = () => (
